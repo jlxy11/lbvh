@@ -13,7 +13,7 @@ struct aabb
     typename vector_of<T>::type upper;
     typename vector_of<T>::type lower;
 };
-
+//box intersects
 template<typename T>
 __device__ __host__
 inline bool intersects(const aabb<T>& lhs, const aabb<T>& rhs) noexcept
