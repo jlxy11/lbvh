@@ -23,7 +23,7 @@ inline bool intersects(const aabb<T>& lhs, const aabb<T>& rhs) noexcept
     if(lhs.upper.z < rhs.lower.z || rhs.upper.z < lhs.lower.z) {return false;}
     return true;
 }
-
+//box merge
 __device__ __host__
 inline aabb<double> merge(const aabb<double>& lhs, const aabb<double>& rhs) noexcept
 {
